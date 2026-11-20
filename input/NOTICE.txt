@@ -1,0 +1,19 @@
+GTA VI trophy rarity forecast: where the data comes from
+==========================================================
+
+Every case here is cut from the house's recording of Exophase's trophy page for Grand Theft Auto VI on PlayStation 5:
+
+  https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/
+
+The page is public. For each of the game's trophies it prints the name, the description and the rarity: the percent of
+the players Exophase tracks for the game who have earned it, to 2 decimals (for example "1.10% (570.00)": 1.10%, and
+570.00 is Exophase's EXP for the trophy, not used here). Its header prints the players tracked. The house reads the page
+on a fixed clock (every 30 minutes in the early recording, every 10 minutes from the in-cluster recorder) and keeps
+each read whole: a read is every trophy's rarity and the players-tracked count at one moment.
+
+A case's `history` is every read the house made before the case's checkpoint (`at`), oldest first. Its answer is the
+first read the house made in the hour from the case's `target` that lists every one of the case's trophies. The
+practice cases are cut from the house's recording of launch night, 2026-11-19 (UTC); the final case from everything
+recorded before the deadline, and its answer is the read at 2026-11-26T00:00:00Z. Exophase shows only the current
+rates, so a past read cannot be fetched again from Exophase itself; the house publishes the final dataset with the
+results.
